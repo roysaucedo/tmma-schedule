@@ -10,20 +10,21 @@
 </head>
 <body class="font-karla bg-black text-white">
   <section class="flex justify-center items-center py-10 flex-col max-w-5xl mx-auto">
-    <h1 class="text-6xl font-karla font-bold mb-10">Class Schedule</h1>
+    <h1 class="text-6xl font-karla font-bold mb-10 text-center">Class Schedule</h1>
     <div class="mx-2 rounded-xl border-2 py-4 px-6 mb-10 text-lg bg-slate-50 text-black">🔎 Hover over the class to learn about each coach</div>
     <!-- FILTER -->
     <div class="flex justify-center items-center w-full flex-wrap">
-      <div class="mx-2 rounded-xl border-2 py-2 px-4 mb-2 text-white bg-red-700">All</div>
-      <div class="mx-2 rounded-xl border-2 py-2 px-4 mb-2 hover:text-white hover:bg-slate-600">Kids</div>
-      <div class="mx-2 rounded-xl border-2 py-2 px-4 mb-2 hover:text-white hover:bg-slate-600">Jiu Jitsu</div>
-      <div class="mx-2 rounded-xl border-2 py-2 px-4 mb-2 hover:text-white hover:bg-slate-600">Muay Thai</div>
-      <div class="mx-2 rounded-xl border-2 py-2 px-4 mb-2 hover:text-white hover:bg-slate-600">Bootcamp</div>
+      <div id="all-btn" class="mx-2 rounded-xl border-2 py-2 px-4 mb-2 text-white bg-red-700">All</div>
+      <div id="kids-btn" class="mx-2 rounded-xl border-2 py-2 px-4 mb-2 hover:text-white hover:bg-slate-600">Kids</div>
+      <div id="cardio-btn" class="mx-2 rounded-xl border-2 py-2 px-4 mb-2 hover:text-white hover:bg-slate-600">Cardio Kickboxing</div>
+      <div id="bjj-btn" class="mx-2 rounded-xl border-2 py-2 px-4 mb-2 hover:text-white hover:bg-slate-600">Jiu Jitsu</div>
+      <div id="muay-thai-btn" class="mx-2 rounded-xl border-2 py-2 px-4 mb-2 hover:text-white hover:bg-slate-600">Muay Thai</div>
+      <div id="bootcamp-btn" class="mx-2 rounded-xl border-2 py-2 px-4 mb-2 hover:text-white hover:bg-slate-600">Bootcamp</div>
     </div>
     <!-- SCHEDULES -->
     <div class="mt-10 w-full text-center">
       
-      <div class="mb-10"><!-- SCHEDULE 1 -->
+      <div id="kickboxing" class="mb-10"><!-- SCHEDULE 1 -->
         <h2 class="text-3xl mb-6">Cardio Kickboxing</h2>
         <table class="w-full border-2">
           <tr class="bg-slate-100 text-black">
@@ -110,7 +111,7 @@
         </table>
 
       </div>
-      <div class="mb-10"><!-- SCHEDULE 2 -->
+      <div id="bjj" class="mb-10"><!-- SCHEDULE 2 -->
         <h2 class="text-3xl mb-6">Jiu Jitsu</h2>
         <table class="w-full border-2">
           <tr class="bg-slate-100 text-black">
@@ -197,7 +198,7 @@
         </table>
 
       </div>
-      <div class="mb-10"><!-- SCHEDULE 3 -->
+      <div id="muay-thai" class="mb-10"><!-- SCHEDULE 3 -->
         <h2 class="text-3xl mb-6">Muay Thai</h2>
         <table class="w-full border-2">
           <tr class="bg-slate-100 text-black">
@@ -284,7 +285,7 @@
         </table>
 
       </div>
-      <div class="mb-10"><!-- SCHEDULE 4 -->
+      <div id="bootcamp" class="mb-10"><!-- SCHEDULE 4 -->
         <h2 class="text-3xl mb-6">Bootcamp</h2>
         <table class="w-full border-2">
           <tr class="bg-slate-100 text-black">
@@ -371,7 +372,7 @@
         </table>
 
       </div>
-      <div class="mb-10"><!-- SCHEDULE 5 -->
+      <div id="kids" class="mb-10"><!-- SCHEDULE 5 -->
         <h2 class="text-3xl mb-6">Kids Kickboxing</h2>
         <table class="w-full border-2">
           <tr class="bg-slate-100 text-black">
@@ -458,7 +459,7 @@
         </table>
 
       </div>
-      <div class="mb-10"><!-- SCHEDULE 6 -->
+      <div id="kids-bjj" class="mb-10"><!-- SCHEDULE 6 -->
         <h2 class="text-3xl mb-6">Kids Jiu Jitsu</h2>
         <table class="w-full border-2">
           <tr class="bg-slate-100 text-black">
@@ -548,5 +549,6 @@
 
     </div>
   </section>
+  <script src="scripts.js"></script>
 </body>
 </html>
