@@ -1,3 +1,4 @@
+
 // grab elements
 let showAll = document.getElementById("all-btn");
 let showKids = document.getElementById("kids-btn");
@@ -24,6 +25,13 @@ function clickAll(){
     bootcampSchedule.classList.remove("hidden");
     kidsBjjSchedule.classList.remove("hidden");
     kidsSchedule.classList.remove("hidden");
+
+    showKids.classList.remove("bg-red-700");
+    showCardio.classList.remove("bg-red-700");
+    showBjj.classList.remove("bg-red-700");
+    showMT.classList.remove("bg-red-700");
+    showBootcamp.classList.remove("bg-red-700");
+    showAll.classList.add("bg-red-700");
 };
 
 function clickKids(){
@@ -33,6 +41,13 @@ function clickKids(){
     bootcampSchedule.classList.add("hidden");
     kidsSchedule.classList.remove("hidden");
     kidsBjjSchedule.classList.remove("hidden");
+
+    showAll.classList.remove("bg-red-700");
+    showCardio.classList.remove("bg-red-700");
+    showBjj.classList.remove("bg-red-700");
+    showMT.classList.remove("bg-red-700");
+    showBootcamp.classList.remove("bg-red-700");
+    showKids.classList.add("bg-red-700");
 };
 
 function clickCardio(){
@@ -42,6 +57,13 @@ function clickCardio(){
     muayThaiSchedule.classList.add("hidden");
     bootcampSchedule.classList.add("hidden");
     cardioSchedule.classList.remove("hidden");
+
+    showAll.classList.remove("bg-red-700");
+    showKids.classList.remove("bg-red-700");
+    showBjj.classList.remove("bg-red-700");
+    showMT.classList.remove("bg-red-700");
+    showBootcamp.classList.remove("bg-red-700");
+    showCardio.classList.add("bg-red-700");
 };
 
 function clickBjj(){
@@ -51,6 +73,13 @@ function clickBjj(){
     muayThaiSchedule.classList.add("hidden");
     bootcampSchedule.classList.add("hidden");
     bjjSchedule.classList.remove("hidden");
+
+    showAll.classList.remove("bg-red-700");
+    showKids.classList.remove("bg-red-700");
+    showCardio.classList.remove("bg-red-700");
+    showMT.classList.remove("bg-red-700");
+    showBootcamp.classList.remove("bg-red-700");
+    showBjj.classList.add("bg-red-700");
 };
 
 function clickMuayThai(){
@@ -60,6 +89,13 @@ function clickMuayThai(){
     bjjSchedule.classList.add("hidden");
     bootcampSchedule.classList.add("hidden");
     muayThaiSchedule.classList.remove("hidden");
+
+    showAll.classList.remove("bg-red-700");
+    showKids.classList.remove("bg-red-700");
+    showBjj.classList.remove("bg-red-700");
+    showCardio.classList.remove("bg-red-700");
+    showBootcamp.classList.remove("bg-red-700");
+    showMT.classList.add("bg-red-700");
 };
 
 function clickBootcamp(){
@@ -69,6 +105,13 @@ function clickBootcamp(){
     bjjSchedule.classList.add("hidden");
     muayThaiSchedule.classList.add("hidden");
     bootcampSchedule.classList.remove("hidden");
+
+    showAll.classList.remove("bg-red-700");
+    showKids.classList.remove("bg-red-700");
+    showCardio.classList.remove("bg-red-700");
+    showBjj.classList.remove("bg-red-700");
+    showMT.classList.remove("bg-red-700");
+    showBootcamp.classList.add("bg-red-700");
 };
 
 // call functions
